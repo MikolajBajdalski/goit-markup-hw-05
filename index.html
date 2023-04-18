@@ -28,7 +28,7 @@
           <nav>
             <ul class="menu">
               <li class="menu-item">
-                <a href="./index.html" class="menu-link">Agencja</a>
+                <a href="./index.html" class="menu-link active">Agencja</a>
               </li>
               <li class="menu-item">
                 <a href="./portfolio.html" class="menu-link">Portfolio</a>
@@ -67,9 +67,18 @@
         <div class="baner-img">
         <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="btn-studio">Zamów usługę</button>
+          <button data-modal-open type="button" class="btn-studio" >Zamów usługę</button>
         </div>
       </div>
+
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal"> to jest modal
+          <button data-modal-close type="button">X</button>
+        </div>
+      </div>
+
+
       </section>
       <section class="lorem-ipsum container section">
         <ul>
@@ -126,6 +135,9 @@
                 alt="Zdjęcie przedstawia ręce osoby piszącej na klawiaturze, obok klawiatury leży schemat narysowany na kartce i kod wyświetlający się na tablecie i części monitora"
                 width="370"
                 height="294" />
+              <div class="what-we-do-item-title">
+                  <p>APLIKACJE KOMPUTEROWE</p>
+              </div>
             </li>
             <li>
               <img
@@ -133,6 +145,9 @@
                 alt="Zdjęcie przedstawia osobe trzymająca telefon oraz laptopa na którym wyświetlają warianty layoutów"
                 width="370"
                 height="294" />
+                <div class="what-we-do-item-title">
+                  <p>APLIKACJE MOBILNE</p>
+              </div>
             </li>
             <li>
               <img
@@ -140,6 +155,9 @@
                 alt="Zdjęcie przedstawia ręce osoby trzymającej tablet z paletą kolorów do wyboru"
                 width="370"
                 height="294" />
+                <div class="what-we-do-item-title">
+                  <p>ROZWIĄZANIA GRAFICZNE</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -421,5 +439,6 @@
         </div>
       </div>
     </footer>
+    <script src="./modal.js"></script>
   </body>
 </html>
